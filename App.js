@@ -59,6 +59,11 @@ export default function App() {
           setCurrentNumber(currentNumber/100) 
           calculator()          
         return
+      case '.':
+        if(!currentNumber.includes('.')){
+          setCurrentNumber(currentNumber + '.') 
+        }         
+        return
     }
 
     setCurrentNumber(currentNumber + buttonPressed)
