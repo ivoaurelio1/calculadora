@@ -1,6 +1,6 @@
 import React from 'react';
 import {useState} from 'react'
-import { StyleSheet, Text, View, TouchableOpacity, Button } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Button, Dimensions } from 'react-native';
 
 export default function App() {
   // Mapeamento de teclas
@@ -117,8 +117,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
-    minWidth: 90, 
-    minHeight: 90,
+    minWidth: Dimensions.get('window').width/4, 
+    minHeight: Dimensions.get('window').width/4,
     flex: 2,
   },
   textButton: {
